@@ -9,7 +9,11 @@ import logging
 import os
 import socket
 import base64
-
+import collections.abc
+collections.Iterable = collections.abc.Iterable
+collections.Mapping = collections.abc.Mapping
+collections.MutableSet = collections.abc.MutableSet
+collections.MutableMapping = collections.abc.MutableMapping
 from collections import Iterable, Mapping
 
 import collections
